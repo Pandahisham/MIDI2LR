@@ -28,7 +28,27 @@ return {
   LrExportMenuItems = {
     {
       title = LOC("$$$/AgCreations/NewCreationDialog/CreateItemDialog/Options=Options"),
-      file = 'Options.lua',
+      file = 'DlgOptions.lua',
+    },
+    {
+      title = LOC("$$$/SmartCollection/Criteria/DevelopPreset=Develop Preset"),
+      file = 'DlgDevelopPresets.lua',
+    },
+    {
+      title = LOC('$$$/MIDI2LR/Options/pastesel=Paste selections'),
+      file = 'DlgPasteSelections.lua',
+    },
+    {
+      title = LOC("$$$/CRaw/Style/Profiles=Profiles"),
+      file = 'DlgProfiles.lua',
+    },
+    {
+      title = LOC("$$$/Library/Filter/FilterLabel=Library filter"):gsub(':',''),
+      file = 'DlgLibraryFilters.lua',
+    },
+    {
+      title = LOC("$$$/AgPrint/ProfileMenu/Other=Other..."),
+      file = 'DlgOther.lua',
     },
     {
       title = LOC("$$$/AgWPG/Dialogs/About/Title=About"),

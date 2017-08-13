@@ -18,7 +18,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 You should have received a copy of the GNU General Public License along with
 MIDI2LR.  If not, see <http://www.gnu.org/licenses/>. 
 ------------------------------------------------------------------------------]]
---[[-----------debug section, enable by adding - to beginning this line
+---[[-----------debug section, enable by adding - to beginning this line
 local LrMobdebug = import 'LrMobdebug'
 LrMobdebug.start()
 --]]-----------end debug section
@@ -27,7 +27,7 @@ local LrTasks = import 'LrTasks'
 -- Main task
 LrTasks.startAsyncTask( 
   function() 
-    -- LrMobdebug.on()
+     LrMobdebug.on()
 -------------preferences
     local Preferences     = require 'Preferences'
     Preferences.Load() 
@@ -426,7 +426,7 @@ LrTasks.startAsyncTask(
     LrFunctionContext.callWithContext( 
       'socket_remote', 
       function( context )
-        -- LrMobdebug.on()
+         LrMobdebug.on()
         local LrRecursionGuard    = import 'LrRecursionGuard'
         local LrShell             = import 'LrShell'
         local LrSocket            = import 'LrSocket'
